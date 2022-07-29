@@ -33,11 +33,11 @@
 
 //Thursday July 28, 2022
 
-function oddOrEven(array) {
-  return array.reduce(function(a, b) {return a + b}, 0) % 2 == 0 ? 'even' : 'odd'
-}
-console.log(oddOrEven([1, 2, 3]))
-console.log(oddOrEven([]))
+// function oddOrEven(array) {
+//   return array.reduce(function(a, b) {return a + b}, 0) % 2 == 0 ? 'even' : 'odd'
+// }
+// console.log(oddOrEven([1, 2, 3]))
+// console.log(oddOrEven([]))
 
 //The arr. reduce() method in JavaScript is used
 // to reduce the array to a single value and executes
@@ -45,3 +45,22 @@ console.log(oddOrEven([]))
 //   (from left - to - right) and the return value
 //   of the function is stored in an accumulator.
 
+// Friday July 29, 2022
+
+const quarterOf = (month) => {
+  if (month <= 3) {
+    return 1
+  } else if (month >= 4 && month <= 6) {
+    return 2
+  } else if (month >= 7 && month <= 9) {
+    return 3
+  } else if (month >= 10 && month <= 12) {
+    return 4
+  } else return undefined
+};
+console.log(quarterOf(12)); 
+
+//Math.Ceil way of solving
+//const quarterOf = (month) => {
+//   return Math.ceil(month / 3);
+// }
